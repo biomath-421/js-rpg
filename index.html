@@ -14,7 +14,7 @@
       </div>
     </header>
     <div class="container">
-      <header>
+     
         <form id="form">
           <div class="wrap">
             <div class="playerContainer">
@@ -23,7 +23,7 @@
                 <input type="text" placeholder="Pseudo" id="pseudoP1" />
 
                 <select class="race" id="raceP1">
-                  <option value="" disabled selected hidden>Choose the race</option>
+                  <option value="" disabled selected hidden >Choose the race</option>
                   <option>Humans</option>
                   <option>Orcs</option>
                   <option>Elves</option>
@@ -33,7 +33,7 @@
 
               <div class="item">
                 <select id="itemP1">
-                  <option value="" disabled selected hidden>Choose the item</option>
+                  <option value="" disabled selected hidden >Choose the item</option>
                   <option>Boots</option>
                   <option>Staff</option>
                   <option>Sword</option>
@@ -52,7 +52,7 @@
                 <input type="text" placeholder=" Pseudo" id="pseudoP2" />
 
                 <select class="race" id="raceP2">
-                  <option value="" disabled selected hidden>Choose the reace</option>
+                  <option value="" disabled selected hidden >Choose the reace</option>
                   <option>Humans</option>
                   <option>Orcs</option>
                   <option>Elves</option>
@@ -62,7 +62,7 @@
 
               <div class="item">
                 <select id="itemP2">
-                  <option value="" disabled selected hidden>Choose the item</option>
+                  <option value="" disabled selected hidden >Choose the item</option >
                   <option>Boots</option>
                   <option>Staff</option>
                   <option>Sword</option>
@@ -72,18 +72,24 @@
             </div>
           </div>
         </form>
-      </header>
+    
 
-      <div class="zoneContainer" id="zone">
+      <div class="zoneContainer" id="zoneContainer">
         <section class="zone" id="zoneP1">
           <div class="data" id="dataP1"></div>
           <div class="progressBar">
             <label for="file">File progress:</label>
-            <progress value="40" aria-valuemin="" max="100"></progress>
+            <progress value="135" max="140"></progress>
+            <div>
+              <p id="nom1"></p>
+              <p id="rc1"></p>
+              <p id="it1"></p>
+            </div>
           </div>
           <div class="img-container">
             <img src="http://placehold.it/256/256" class="imgRace" id="imgRaceP1" />
-            <img src="http://placehold.it/50/256" class="imgRace" />
+           
+         
           </div>
           <div class="moveP1">
             <button class="btnMove" id="btnHitP1">Hit</button>
@@ -91,21 +97,20 @@
             <button class="btnMove" id="btn-yieldP1">Yield</button>
           </div>
         </section>
-        <div>
-          <p id="nom1"></p>
-          <p id="rc1"></p>
-          <p id="it1"></p>
-        </div>
 
         <section class="zone" id="zoneP2">
           <div class="data" id="dataP2"></div>
           <div class="progressBar">
             <label for="file">File progress:</label>
             <progress value="40" aria-valuemin="" max="100"></progress>
+            <div>
+              <p id="nom2"></p>
+              <p id="rc2"></p>
+              <p id="it2"></p>
+            </div>
           </div>
           <div class="img-container">
-            <img src="http://placehold.it/256/256" class="imgRace" title="test" />
-            <img src="http://placehold.it/50/256" class="imgRace" />
+            <img  src="http://placehold.it/256/256"  class="imgRace" title="test"   id="imgRaceP2"  />
           </div>
           <div class="moveP1">
             <button class="btnMove" id="btnHitP2">Hit</button>
@@ -113,11 +118,6 @@
             <button class="btnMove" id="btn-yieldP2">Yield</button>
           </div>
         </section>
-        <div>
-          <p id="nom2"></p>
-          <p id="rc2"></p>
-          <p id="it2"></p>
-        </div>
       </div>
 
       <div class="log">
@@ -125,6 +125,6 @@
       </div>
     </div>
 
-    <script type="module" src="./js/character.js"></script>
+    <script type="module" src="./js/characterCopy.js"></script>
   </body>
 </html>

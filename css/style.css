@@ -9,8 +9,15 @@ button {
   display: block;
 }
 
+
 .imgHeader {
+  height: 200px;
   text-align: center;
+}
+
+.imgHeader img{
+ 
+  height: 100%;
 }
 
 .container {
@@ -93,10 +100,31 @@ button {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
   margin-top: 15px;
+  transform: translateY(0%);
+  border: 1px solid #ccc;
+  transform: translateY(-300%);
+
+  
 }
+
+.zoneContainer.show{
+
+  transition: transform 0.75s ease-in;
+  transform: translateY(0%);
+
+
+}
+
+
 
 .zone {
   margin-bottom: 5px;
-  border: 1px solid #ccc;
+
   padding: 10px;
+}
+
+
+.zone img{
+  width: 200px;
+  height: 200px;
 }
