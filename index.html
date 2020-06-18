@@ -10,7 +10,7 @@
   <body class="bodystyle">
     <header>
       <div class="imgHeader">
-        <img src="./img/ZOMBIELAND.png" />
+        <img src="./img/ZOMBIELAND.png" class="shadowed"/>
       </div>
     </header>
     <div class="container">
@@ -18,7 +18,7 @@
         <div class="wrap">
           <div class="playerContainer">
             <div class="Player" id="P1">
-              <label>Player1</label>
+              <label class="styleplayer">Player1</label>
               <input type="text" placeholder="Pseudo" id="pseudoP1" />
 
               <select class="race" id="raceP1">
@@ -51,7 +51,7 @@
           <!--Player 2-->
           <div class="playerContainer">
             <div class="Player" id="P2">
-              <label>Player2</label>
+              <label class="styleplayer">Player2</label>
               <input type="text" placeholder=" Pseudo" id="pseudoP2" />
 
               <select class="race" id="raceP2">
@@ -84,7 +84,7 @@
         <section class="zone" id="zoneP1">
           <div class="data" id="dataP1"></div>
           <div class="progressBar">
-            <label for="file">File progress:</label>
+            <label for="file">Health:</label>
             <progress id="scoreP1" value="100" max="140"></progress>
             <div>
               <p id="nom1"></p>
@@ -105,12 +105,13 @@
             <button class="btnMove" id="btn-yieldP1">Yield</button>
           </div>
         </section>
-
-        <section class="zone" id="zoneP2">
+       
+        <section class="zone zonep2" id="zoneP2">
           <div class="data" id="dataP2"></div>
           <div class="progressBar">
-            <label for="file">File progress:</label>
+            <label for="file">Health :</label>
             <progress
+            class="score"
               id="scoreP2"
               value="100"
               aria-valuemin=""
@@ -125,9 +126,10 @@
           <div class="img-container">
             <img
               src="http://placehold.it/256/256"
-              class="imgRace"
+              class="imgRace mirror"
               title="test"
               id="imgRaceP2"
+
             />
           </div>
           <div class="moveP1">
@@ -135,9 +137,10 @@
             <button class="btnMove" id="btnHealP2">Heal</button>
             <button class="btnMove" id="btn-yieldP2">Yield</button>
           </div>
-        </section>
+         
+        </section> 
+        <div id="moves-log" class="position"></div>
       </div>
-
       <div class="log">
         <p class="msg"></p>
       </div>
