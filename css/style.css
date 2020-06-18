@@ -9,15 +9,20 @@ button {
   display: block;
 }
 
-
+.bodystyle{
+  background-color:  rgb(92, 65, 43);
+}
 .imgHeader {
   height: 200px;
-  text-align: center;
+  text-align: center; 
+  margin-top:15px;
+  margin-bottom: 15px;
 }
 
 .imgHeader img{
  
   height: 100%;
+
 }
 
 .container {
