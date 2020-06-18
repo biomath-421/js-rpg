@@ -14,72 +14,78 @@
       </div>
     </header>
     <div class="container">
-     
-        <form id="form">
-          <div class="wrap">
-            <div class="playerContainer">
-              <div class="Player" id="P1">
-                <label>Player1</label>
-                <input type="text" placeholder="Pseudo" id="pseudoP1" />
+      <form id="form">
+        <div class="wrap">
+          <div class="playerContainer">
+            <div class="Player" id="P1">
+              <label>Player1</label>
+              <input type="text" placeholder="Pseudo" id="pseudoP1" />
 
-                <select class="race" id="raceP1">
-                  <option value="" disabled selected hidden >Choose the race</option>
-                  <option>Humans</option>
-                  <option>Orcs</option>
-                  <option>Elves</option>
-                  <option>Vampires</option>
-                </select>
-              </div>
-
-              <div class="item">
-                <select id="itemP1">
-                  <option value="" disabled selected hidden >Choose the item</option>
-                  <option>Boots</option>
-                  <option>Staff</option>
-                  <option>Sword</option>
-                  <option>Bow</option>
-                </select>
-              </div>
+              <select class="race" id="raceP1">
+                <option value="" disabled selected hidden
+                  >Choose the race</option
+                >
+                <option>Humans</option>
+                <option>Orcs</option>
+                <option>Elves</option>
+                <option>Vampires</option>
+              </select>
             </div>
 
-            <!-- bouton début du jeu PLAY-->
-            <button type="button" class="btnPlay" id="playBtn">Play</button>
-
-            <!--Player 2-->
-            <div class="playerContainer">
-              <div class="Player" id="P2">
-                <label>Player2</label>
-                <input type="text" placeholder=" Pseudo" id="pseudoP2" />
-
-                <select class="race" id="raceP2">
-                  <option value="" disabled selected hidden >Choose the reace</option>
-                  <option>Humans</option>
-                  <option>Orcs</option>
-                  <option>Elves</option>
-                  <option>Vampires</option>
-                </select>
-              </div>
-
-              <div class="item">
-                <select id="itemP2">
-                  <option value="" disabled selected hidden >Choose the item</option >
-                  <option>Boots</option>
-                  <option>Staff</option>
-                  <option>Sword</option>
-                  <option>Bow</option>
-                </select>
-              </div>
+            <div class="item">
+              <select id="itemP1">
+                <option value="" disabled selected hidden
+                  >Choose the item</option
+                >
+                <option>Boots</option>
+                <option>Staff</option>
+                <option>Sword</option>
+                <option>Bow</option>
+              </select>
             </div>
           </div>
-        </form>
-    
+
+          <!-- bouton début du jeu PLAY-->
+          <button type="button" class="btnPlay" id="playBtn">Play</button>
+
+          <!--Player 2-->
+          <div class="playerContainer">
+            <div class="Player" id="P2">
+              <label>Player2</label>
+              <input type="text" placeholder=" Pseudo" id="pseudoP2" />
+
+              <select class="race" id="raceP2">
+                <option value="" disabled selected hidden
+                  >Choose the reace</option
+                >
+                <option>Humans</option>
+                <option>Orcs</option>
+                <option>Elves</option>
+                <option>Vampires</option>
+              </select>
+            </div>
+
+            <div class="item">
+              <select id="itemP2">
+                <option value="" disabled selected hidden
+                  >Choose the item</option
+                >
+                <option>Boots</option>
+                <option>Staff</option>
+                <option>Sword</option>
+                <option>Bow</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
 
       <div class="zoneContainer" id="zoneContainer">
         <section class="zone" id="zoneP1">
           <div class="data" id="dataP1"></div>
           <div class="progressBar">
             <label for="file">File progress:</label>
-            <progress value="135" max="140"></progress>
+            <progress id="scoreP1" value="100" max="140"></progress>
             <div>
               <p id="nom1"></p>
               <p id="rc1"></p>
@@ -87,9 +93,11 @@
             </div>
           </div>
           <div class="img-container">
-            <img src="http://placehold.it/256/256" class="imgRace" id="imgRaceP1" />
-           
-         
+            <img
+              src="http://placehold.it/256/256"
+              class="imgRace"
+              id="imgRaceP1"
+            />
           </div>
           <div class="moveP1">
             <button class="btnMove" id="btnHitP1">Hit</button>
@@ -102,7 +110,12 @@
           <div class="data" id="dataP2"></div>
           <div class="progressBar">
             <label for="file">File progress:</label>
-            <progress value="40" aria-valuemin="" max="100"></progress>
+            <progress
+              id="scoreP2"
+              value="100"
+              aria-valuemin=""
+              max="100"
+            ></progress>
             <div>
               <p id="nom2"></p>
               <p id="rc2"></p>
@@ -110,7 +123,12 @@
             </div>
           </div>
           <div class="img-container">
-            <img  src="http://placehold.it/256/256"  class="imgRace" title="test"   id="imgRaceP2"  />
+            <img
+              src="http://placehold.it/256/256"
+              class="imgRace"
+              title="test"
+              id="imgRaceP2"
+            />
           </div>
           <div class="moveP1">
             <button class="btnMove" id="btnHitP2">Hit</button>
@@ -125,6 +143,6 @@
       </div>
     </div>
 
-    <script type="module" src="./js/characterCopy.js"></script>
+    <script type="module" src="./js/gameLogic.js"></script>
   </body>
 </html>
