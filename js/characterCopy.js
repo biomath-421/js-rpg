@@ -203,8 +203,6 @@ document.getElementById("reload").addEventListener('click',() => {
 document.getElementById("playBtn").addEventListener("click", () => {
 
   form.style.display = "none";
-  document.body.style.overflow= "scroll"
-  document.body.style.overflowX="hidden"
   zoneContainer.classList.add("show");
   
   nomP1 = document.getElementById("pseudoP1").value;

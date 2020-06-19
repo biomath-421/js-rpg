@@ -1,9 +1,9 @@
 .bodystyle{
   background-color:  rgb(196, 144, 101);
-  font-family: Arial, Helvetica, sans-serif;
+ 
 }
 .imgHeader {
-  height: 150px;
+  height: 100px;
   text-align: center; 
   padding-top:15px;
   padding-bottom: 15px;
@@ -25,7 +25,8 @@
   margin: 0 auto;
   width: 90%;
   max-width: 1100px;
-  padding-top: 160px;
+  padding-top: 110px;
+  position: relative;
   
  
 }
@@ -63,14 +64,24 @@
 
 }
 .btnMove {
+  padding: 5px;
+  min-width: 50px;
+  background-color: #883434;
+  margin-top: 10px;
+
+}
+.btnMove:hover {
   width: 10%;
   min-width: 50px;
+  color: #883434;
+  background-color: white;
 }
 
 .zoneContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr, 1fr);
-
+  grid-template-columns: repeat(3 1fr);
+  margin-left: 35px;
+  margin-right: 35px;
   margin-top: 15px;
   transform: translateY(0%);
   border: 1px solid rgb(85, 42, 6);
@@ -78,27 +89,29 @@
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(175, 79, 0, 0.438);
+  line-height: 1.5em;
+  margin-bottom: 10px;
 
 
   
 }
 
 #moves-log {
-  width: 500px;
+  min-width: 400px;
+  max-width: 450px;
   height: 200px;
   border-color: #572209;
   border: 1px solid;
-      margin-top: auto;
+  margin: auto;
+  grid-column: 2;
   color: rgb(71, 36, 3);
   text-align: center;
   font-size: 20px;
   overflow: auto;
-  grid-row: 5;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  
-  
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 16px rgb(59, 40, 24),
+  1px 1px 16px rgb(207, 162, 124);
+  padding: 5px;
 }
 .zoneContainer.show{
 
@@ -115,14 +128,20 @@
 }
 
 .zone {
+  text-align: center;
   margin-bottom: 5px;
 
   padding: 10px;
-  grid-row: 3;
 }
-
+.zonep1{
+  grid-column: 0;
+  display: inline;
+  vertical-align: baseline;
+}
 .zonep2{
-  text-align: right;
+  grid-column: 3;
+  display: inline;
+  vertical-align: baseline;
 }
 .score{
   transform: rotateY(180deg);
@@ -196,7 +215,7 @@ input:focus {
 }
 
 progress {
-  width: 40%;
+width: 90%;
   border-radius: 10px;
   display: block;
   margin: 10px;
@@ -216,6 +235,22 @@ button {
   margin-right: 8px;
 }
 body{
-  overflow: hidden;;
+  overflow: hidden;
+  
+    font-family: "Cinzel Decorative", Arial, Helvetica, sans-serif ;
+}
+table{
+  display: inline;
+}
+@font-face {
+	font-family: "Cinzel Decorative Regular";
+	src: url('../Cinzel_Decorative/CinzelDecorative-Regular.ttf');
+}
+@font-face {
+	font-family: "Cinzel Decorative Bold";
+	src: url('../Cinzel_Decorative/CinzelDecorative-Bold.ttf');
+}
+.boldy{
+  font-family: "Cinzel Decorative Bold";
 }
 
