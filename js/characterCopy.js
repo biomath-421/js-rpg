@@ -193,6 +193,10 @@ let P1 ;
 let P2 ;
 
 
+document.getElementById("reload").addEventListener('click',() => {
+  window.location.reload();
+  window.scrollTo(0,0);
+});
 
 
 
