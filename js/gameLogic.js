@@ -13,7 +13,7 @@ let moveP2 = document.querySelector(".moveP2")
 let player1;
 let player2;
 
-
+ 
 
 races.forEach((race) => {
   race.addEventListener("change", (e) => {
