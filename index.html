@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Zombie Land</title>
   </head>
   <body class="bodystyle">
@@ -33,7 +34,7 @@
             </div>
 
             <div class="item">
-              <select id="itemP1">
+              <select id="itemP1" class="itemList">
                 <option value="" disabled selected hidden
                   >Choose the item</option
                 >
@@ -66,7 +67,7 @@
             </div>
 
             <div class="item">
-              <select id="itemP2">
+              <select id="itemP2" class="itemList">
                 <option value="" disabled selected hidden
                   >Choose the item</option
                 >
@@ -84,8 +85,9 @@
         <section class="zone zonep1" id="zoneP1">
           <div class="data" id="dataP1"></div>
           <div class="progressBar">
-            <label for="file" style="text-align: left;" class="health">Health:</label>
-            <progress id="scoreP1" value="100" max="140"></progress>
+            <span id="barP1Num"></span>
+            <label for="file" style="text-align: left;" class="health boldy">Health:</label>
+            <progress id="scoreP1" value="100" max="100"></progress>
             <div>
               <p id="nom1"></p>
               <p id="rc1"></p>
@@ -102,19 +104,19 @@
           <div class="moveP1">
             <button class="btnMove" id="btnHitP1">Hit</button>
             <button class="btnMove" id="btnHealP1">Heal</button>
-            <button class="btnMove" id="btn-yieldP1">Yield</button>
+            <button class="btnMove Yield" id="btnYieldP1">Yield</button>
           </div>
         </section>
-        <div id="moves-log" class="position">bzz bzz bzz</div>
+        <div id="moves-log" class="position msg"></div>
         <section class="zone zonep2" id="zoneP2">
           <div class="data" id="dataP2"></div>
           <div class="progressBar">
-            <label for="file" class="health">Health :</label>
+            <span id="barP2Num"></span>
+            <label for="file" class="health boldy">Health :</label>
             <progress
             class="score"
               id="scoreP2"
               value="100"
-              aria-valuemin=""
               max="100"
             ></progress>
             <div>
@@ -126,16 +128,20 @@
           <div class="img-container">
             <img
               src="http://placehold.it/256/256"
-              class="imgRace mirror"
+              class="imgRace imgPlayer2 mirror"
               title="test"
               id="imgRaceP2"
+              
+             
+             
+
 
             />
           </div>
-          <div class="moveP1">
+          <div class="moveP2">
             <button class="btnMove" id="btnHitP2">Hit</button>
             <button class="btnMove" id="btnHealP2">Heal</button>
-            <button class="btnMove" id="btn-yieldP2">Yield</button>
+            <button class="btnMove" id="btnYieldP2">Yield</button>
           </div>
          
         </section> 
@@ -145,7 +151,8 @@
       </div>
     </div>
 
+    <script type="module" src="./js/character.js"></script>
+
     <script type="module" src="./js/gameLogic.js"></script>
-    <script type="module" src="./js/characterCopy.js"></script>
   </body>
 </html>
