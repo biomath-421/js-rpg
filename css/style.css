@@ -13,6 +13,10 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+
+}
+.imgHeader img:hover {
+cursor: auto;
 }
 
 .imgHeader img{
@@ -214,12 +218,20 @@ input:focus {
   outline: none;
 }
 
-progress {
+progress:progress-bar {
 width: 90%;
   border-radius: 10px;
   display: block;
   margin: 10px;
   padding: 2px;
+}
+progress:progress-value{
+  border-radius: 10px;
+  background: #883434;
+}
+::-moz-progress-value{
+  border-radius: 10px;
+  background: #883434;
 }
 
 button {
@@ -250,7 +262,13 @@ table{
 	font-family: "Cinzel Decorative Bold";
 	src: url('../Cinzel_Decorative/CinzelDecorative-Bold.ttf');
 }
-.boldy{
+.health{
   font-family: "Cinzel Decorative Bold";
+  color: #d49151;
+  background-color: #572209;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
